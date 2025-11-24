@@ -23,6 +23,8 @@ def auto_add_application_to_menu(sender, data):  # 添加的方法
         with menu(f'{menu_k}##Main Menu', parent=sender):
             for _item in menu_v: 
                 add_menu_item(f'{_item["name"]}##Main Menu Item', callback=_item['app'].start_app)
+                print(f'{_item["name"]}##Main Menu Item')
+                print(_item['app'].start_app)
 
 def add_themes_and_help_menu(sender, data):
     with menu('Themes', parent=sender):

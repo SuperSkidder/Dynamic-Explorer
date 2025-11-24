@@ -49,6 +49,8 @@ def start_app(sender, data):
                 'OZ': {'name':'OZ_formula', 'num': 0, 'serial':[], 'pars': ['I0', 'kesai'], 'pmin': [0, 40], 'pmax': [np.inf, 200], 'vary': [True, True]},
                 'WLF': {'name':'WLF_function', 'num': 0, 'serial':[], 'pars': ['C1', 'C2', 'Tr'], 'pmin': [0, 0, 0], 'pmax': [np.inf, np.inf, np.inf], 'vary': [True, True, True]}
                 }
+            print(f"stored_dict{i}")
+            print(dict)
             add_data(f"stored_dict{i}", dict)
             pnum = pnum + 1
             
